@@ -39,3 +39,6 @@ Open de link op twee toestellen. Meld je op toestel A aan. Vernieuw op toestel B
 
 ## Gegevens opruimen
 Na het feest kun je in het Netlify-project via de Blobs-opslag de store `ali-30-rsvp` verwijderen. Zet de site ook offline wanneer de uitnodiging niet meer nodig is. De store wordt bewust behouden bij een volgende deploy van dezelfde site.
+
+## Update met dansanimatie
+De pagina bevat nu een dansende Ali met een pauze- en startknop. Bij de systeemvoorkeur voor minder beweging staat de animatie standaard stil. Onderaan staat een klikbare Powered by marleo.tech-vermelding. Upload bij deze update opnieuw alle uitgepakte bestanden en mappen in dezelfde GitHub-repository en bevestig de wijzigingen. Gebruik dezelfde Netlify-site om de bestaande gastenlijst te behouden.

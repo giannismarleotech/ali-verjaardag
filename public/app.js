@@ -48,3 +48,9 @@ form.addEventListener('submit',async event=>{
 $('#refresh').addEventListener('click',refresh);
 $('#share').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.origin+location.pathname);$('#share').textContent='Link gekopieerd';}catch{$('#share').textContent='Kopieer de link uit je adresbalk';}});
 refresh();setInterval(()=>{if(!document.hidden)refresh();},20000);
+
+const danceSection=document.querySelector('.dance-section');
+const danceToggle=document.querySelector('#dance-toggle');
+let dancing=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function updateDance(){danceSection.classList.toggle('paused',!dancing);danceToggle.setAttribute('aria-pressed',String(dancing));danceToggle.textContent=dancing?'Even uitblazen':'Laat Ali dansen';}
+danceToggle.addEventListener('click',()=>{dancing=!dancing;updateDance();});updateDance();
